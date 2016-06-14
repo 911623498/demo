@@ -54,8 +54,8 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'xiaoyi'),
+            'host'     => env('DB_HOST', '192.168.1.40'),
+            'database' => env('DB_DATABASE', 'zp'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'root'),
             'charset'   => 'utf8',
