@@ -1,0 +1,2723 @@
+2016-01-03 20:36:09 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\day8\month9\rikao2\vendor\yiisoft\yii2/assets' in D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\day8\\month9\\...', Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\YiiAsse...', Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\YiiAsse...')
+#4 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#5 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 D:\day8\advanced\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\day8\\advance...')
+#8 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\day8\\advance...', Array)
+#9 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\day8\\advance...', Array, Object(frontend\controllers\SiteController))
+#10 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#11 D:\day8\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 D:\day8\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\day8\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#16 D:\day8\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#17 D:\day8\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\day8\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2016-01-03 20:36:09 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '58969'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451824568.891
+    'REQUEST_TIME' => 1451824568
+]
+2016-01-03 20:36:09 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\day8\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-01-03 20:36:09 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '58969'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451824568.891
+    'REQUEST_TIME' => 1451824568
+]
+2016-01-03 20:36:37 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\day8\month9\rikao2\vendor\yiisoft\yii2/assets' in D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\day8\\month9\\...', Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\YiiAsse...', Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\YiiAsse...')
+#4 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#5 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 D:\day8\advanced\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\day8\\advance...')
+#8 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\day8\\advance...', Array)
+#9 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\day8\\advance...', Array, Object(frontend\controllers\SiteController))
+#10 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#11 D:\day8\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 D:\day8\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\day8\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#16 D:\day8\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#17 D:\day8\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\day8\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2016-01-03 20:36:37 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '58978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451824597.645
+    'REQUEST_TIME' => 1451824597
+]
+2016-01-03 20:36:37 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\day8\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-01-03 20:36:37 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '58978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451824597.645
+    'REQUEST_TIME' => 1451824597
+]
+2016-01-03 20:38:21 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\day8\month9\rikao2\vendor\yiisoft\yii2/assets' in D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\day8\\month9\\...', Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\YiiAsse...', Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\YiiAsse...')
+#4 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#5 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 D:\day8\advanced\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\day8\\advance...')
+#8 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\day8\\advance...', Array)
+#9 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\day8\\advance...', Array, Object(frontend\controllers\SiteController))
+#10 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#11 D:\day8\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 D:\day8\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\day8\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#16 D:\day8\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#17 D:\day8\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\day8\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2016-01-03 20:38:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59006'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451824701.055
+    'REQUEST_TIME' => 1451824701
+]
+2016-01-03 20:38:21 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\day8\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-01-03 20:38:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59006'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451824701.055
+    'REQUEST_TIME' => 1451824701
+]
+2016-01-03 20:42:16 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\day8\month9\rikao2\vendor\yiisoft\yii2/assets' in D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\day8\\month9\\...', Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\YiiAsse...', Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\YiiAsse...')
+#4 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#5 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 D:\day8\advanced\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\day8\\advance...')
+#8 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\day8\\advance...', Array)
+#9 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\day8\\advance...', Array, Object(frontend\controllers\SiteController))
+#10 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#11 D:\day8\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 D:\day8\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\day8\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#16 D:\day8\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#17 D:\day8\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\day8\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2016-01-03 20:42:16 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451824936.626
+    'REQUEST_TIME' => 1451824936
+]
+2016-01-03 20:42:16 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\day8\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-01-03 20:42:16 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451824936.626
+    'REQUEST_TIME' => 1451824936
+]
+2016-01-03 20:57:05 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\day8\month9\rikao2\vendor\yiisoft\yii2/assets' in D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\day8\\month9\\...', Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\YiiAsse...', Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\YiiAsse...')
+#4 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#5 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 D:\day8\advanced\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\day8\\advance...')
+#8 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\day8\\advance...', Array)
+#9 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\day8\\advance...', Array, Object(frontend\controllers\SiteController))
+#10 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#11 D:\day8\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 D:\day8\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\day8\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#16 D:\day8\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#17 D:\day8\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\day8\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2016-01-03 20:57:04 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59462'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451825824.758
+    'REQUEST_TIME' => 1451825824
+]
+2016-01-03 20:57:05 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\day8\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-01-03 20:57:04 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59462'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451825824.758
+    'REQUEST_TIME' => 1451825824
+]
+2016-01-03 20:57:21 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\day8\month9\rikao2\vendor\yiisoft\yii2/assets' in D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\day8\\month9\\...', Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\YiiAsse...', Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\YiiAsse...')
+#4 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#5 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 D:\day8\advanced\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\day8\\advance...')
+#8 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\day8\\advance...', Array)
+#9 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\day8\\advance...', Array, Object(frontend\controllers\SiteController))
+#10 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#11 D:\day8\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 D:\day8\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\day8\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#16 D:\day8\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#17 D:\day8\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\day8\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2016-01-03 20:57:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59470'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451825841.079
+    'REQUEST_TIME' => 1451825841
+]
+2016-01-03 20:57:21 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\day8\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-01-03 20:57:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59470'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451825841.079
+    'REQUEST_TIME' => 1451825841
+]
+2016-01-03 21:11:06 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\day8\month9\rikao2\vendor\yiisoft\yii2/assets' in D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\day8\\month9\\...', Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\YiiAsse...', Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\YiiAsse...')
+#4 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#5 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 D:\day8\advanced\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\day8\\advance...')
+#8 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\day8\\advance...', Array)
+#9 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\day8\\advance...', Array, Object(frontend\controllers\SiteController))
+#10 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#11 D:\day8\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 D:\day8\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\day8\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#16 D:\day8\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#17 D:\day8\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\day8\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2016-01-03 21:11:06 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59605'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451826666.293
+    'REQUEST_TIME' => 1451826666
+]
+2016-01-03 21:11:06 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\day8\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-01-03 21:11:06 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.day8.com/advanced/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59605'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451826666.293
+    'REQUEST_TIME' => 1451826666
+]
+2016-01-03 21:11:12 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\day8\month9\rikao2\vendor\yiisoft\yii2/assets' in D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\day8\\month9\\...', Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\YiiAsse...', Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\YiiAsse...')
+#4 D:\day8\advanced\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#5 D:\day8\advanced\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 D:\day8\advanced\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\day8\\advance...')
+#8 D:\day8\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\day8\\advance...', Array)
+#9 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\day8\\advance...', Array, Object(frontend\controllers\SiteController))
+#10 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#11 D:\day8\advanced\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 D:\day8\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\day8\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\day8\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#16 D:\day8\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#17 D:\day8\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\day8\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+2016-01-03 21:11:12 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451826672.56
+    'REQUEST_TIME' => 1451826672
+]
+2016-01-03 21:11:12 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\day8\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\day8\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\day8\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 [internal function]: yii\log\Logger->flush(true)
+#5 {main}
+2016-01-03 21:11:12 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '5805983744'
+    'CKFinder_Path' => 'Images:/:1'
+    'vjuids' => '-55d53347f.150d5a1378b.0.ee53581f'
+    'bdshare_firstime' => '1446790037236'
+    'Hm_lvt_324368ef52596457d064ca5db8c6618e' => '1447029557'
+    '_ga' => 'GA1.2.1680509199.1447029557'
+    'Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b' => '1447073664'
+    '__gads' => 'ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA'
+    'vjlast' => '1446693124.1447073664.11'
+    'lastvisit' => '1447632599939'
+    'Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d' => '1447816802'
+    'CNZZDATA4782199' => 'cnzz_eid=997361507-1447812949-&ntime=1447812949'
+    'Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa' => '1448283100'
+    'CNZZDATA1254714237' => '2041149388-1448185007-http%3A%2F%2Fwww.day8.com%2F|1448670322'
+    'Hm_lvt_d799c65d200835b98ecf7760c758bc5d' => '1448411685,1448501366,1448588535,1448670618'
+    '8g71_2132_saltkey' => 's663hzxQ'
+    '8g71_2132_lastvisit' => '1450682866'
+    'ECS' => [
+        'username' => '宏甜歌'
+        'visit_times' => '40'
+    ]
+    'PHPSESSID' => 'tp5a3j0tdqkr9b790hahfg2it3'
+    '_csrf' => '613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.day8.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'pgv_pvi=5805983744; CKFinder_Path=Images%3A%2F%3A1; vjuids=-55d53347f.150d5a1378b.0.ee53581f; bdshare_firstime=1446790037236; Hm_lvt_324368ef52596457d064ca5db8c6618e=1447029557; _ga=GA1.2.1680509199.1447029557; Hm_lvt_080dabacb001ad3dc8b9b9049b36d43b=1447073664; __gads=ID=2dd5c3e5d5ea2c15:T=1447073620:S=ALNI_MYj2yIiDX6zJx8142G7TEP3WB86eA; vjlast=1446693124.1447073664.11; lastvisit=1447632599939; Hm_lvt_afb625f73f5cdb2df77e65fce01cdb9d=1447816802; CNZZDATA4782199=cnzz_eid%3D997361507-1447812949-%26ntime%3D1447812949; Hm_lvt_7fe4ae9e1d0d01bcf748d066979cd2aa=1448283100; CNZZDATA1254714237=2041149388-1448185007-http%253A%252F%252Fwww.day8.com%252F%7C1448670322; Hm_lvt_d799c65d200835b98ecf7760c758bc5d=1448411685,1448501366,1448588535,1448670618; 8g71_2132_saltkey=s663hzxQ; 8g71_2132_lastvisit=1450682866; ECS[username]=%E5%AE%8F%E7%94%9C%E6%AD%8C; ECS[visit_times]=40; PHPSESSID=tp5a3j0tdqkr9b790hahfg2it3; _csrf=613f6c5bd5ed5d910be6e29646d82d5fec5f4c628ae06fed0de1e65e4e291621a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eiVxN_lkMXcW2aVP_NCSzPd9I528q2-t%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\mysqldata\\bin;D:\\wamp\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;E:\\Composer\\UPUPW_AP5.6_64\\PHP5;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 Server at www.day8.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17'
+    'SERVER_NAME' => 'www.day8.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/day8'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/day8'
+    'SERVER_ADMIN' => 'webmaster@www.day8.com'
+    'SCRIPT_FILENAME' => 'D:/day8/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '59610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451826672.56
+    'REQUEST_TIME' => 1451826672
+]
+2016-06-07 10:33:56 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\wamp\demo\yii\frontend\views\demo\about.php' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\wamp\\demo\\yi...', Array, Object(frontend\controllers\DemoController))
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('about', Array, Object(frontend\controllers\DemoController))
+#2 D:\wamp\demo\yii\frontend\controllers\DemoController.php(18): yii\base\Controller->render('about')
+#3 [internal function]: frontend\controllers\DemoController->actionLian()
+#4 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('lian', Array)
+#7 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('demo/lian', Array)
+#8 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-06-07 10:33:56 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'demo/lian'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vmui06pb05ft38j73k6hh95rn3'
+    '_csrf' => 'a4a5daa15da85fca46b73ec12aa77029350901d7bf97563f76df0017e46c9728a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"td6Jyfz2afJo20CfYkZUiXLyLjo875Bu\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/?r=demo'
+    'HTTP_COOKIE' => 'PHPSESSID=vmui06pb05ft38j73k6hh95rn3; _csrf=a4a5daa15da85fca46b73ec12aa77029350901d7bf97563f76df0017e46c9728a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td6Jyfz2afJo20CfYkZUiXLyLjo875Bu%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52933'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=demo/lian'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=demo/lian'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465266836.114
+    'REQUEST_TIME' => 1465266836
+]
+2016-06-07 10:33:56 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\wamp\demo\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\wamp\demo\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2016-06-07 10:33:56 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'demo/lian'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vmui06pb05ft38j73k6hh95rn3'
+    '_csrf' => 'a4a5daa15da85fca46b73ec12aa77029350901d7bf97563f76df0017e46c9728a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"td6Jyfz2afJo20CfYkZUiXLyLjo875Bu\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/?r=demo'
+    'HTTP_COOKIE' => 'PHPSESSID=vmui06pb05ft38j73k6hh95rn3; _csrf=a4a5daa15da85fca46b73ec12aa77029350901d7bf97563f76df0017e46c9728a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td6Jyfz2afJo20CfYkZUiXLyLjo875Bu%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '52933'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=demo/lian'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=demo/lian'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465266836.114
+    'REQUEST_TIME' => 1465266836
+]
+2016-06-07 11:05:17 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::import()' in D:\wamp\demo\yii\frontend\views\demo\index.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-07 11:05:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'vmui06pb05ft38j73k6hh95rn3'
+    '_csrf' => 'a4a5daa15da85fca46b73ec12aa77029350901d7bf97563f76df0017e46c9728a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"td6Jyfz2afJo20CfYkZUiXLyLjo875Bu\";}'
+    'IESESSION' => 'alive'
+    '_qddab' => '3-g0760g.ip4u236b'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=vmui06pb05ft38j73k6hh95rn3; _csrf=a4a5daa15da85fca46b73ec12aa77029350901d7bf97563f76df0017e46c9728a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td6Jyfz2afJo20CfYkZUiXLyLjo875Bu%22%3B%7D; IESESSION=alive; _qddab=3-g0760g.ip4u236b'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53236'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_URI' => '/demo/yii/frontend/web/?r=demo'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465268717.75
+    'REQUEST_TIME' => 1465268717
+]
+2016-06-07 11:06:22 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method Yii::import()' in D:\wamp\demo\yii\frontend\views\demo\index.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-07 11:06:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'demo'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'vmui06pb05ft38j73k6hh95rn3'
+    '_csrf' => 'a4a5daa15da85fca46b73ec12aa77029350901d7bf97563f76df0017e46c9728a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"td6Jyfz2afJo20CfYkZUiXLyLjo875Bu\";}'
+    'IESESSION' => 'alive'
+    '_qddab' => '3-g0760g.ip4u236b'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=vmui06pb05ft38j73k6hh95rn3; _csrf=a4a5daa15da85fca46b73ec12aa77029350901d7bf97563f76df0017e46c9728a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td6Jyfz2afJo20CfYkZUiXLyLjo875Bu%22%3B%7D; IESESSION=alive; _qddab=3-g0760g.ip4u236b'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=demo'
+    'REQUEST_URI' => '/demo/yii/frontend/web/?r=demo'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465268782.477
+    'REQUEST_TIME' => 1465268782
+]
+2016-06-11 11:00:58 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Companylist/list".' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('Companylist/lis...', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:00:58 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'Companylist/list'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=demo'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55304'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Companylist/list'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=Companylist/list'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465614058.152
+    'REQUEST_TIME' => 1465614058
+]
+2016-06-11 11:06:54 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/updatePwd' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('updatePwd', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/updatePwd', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:06:54 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'user/updatePwd'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/account'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55426'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/updatePwd'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=user/updatePwd'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465614414.283
+    'REQUEST_TIME' => 1465614414
+]
+2016-06-11 11:07:18 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/updatePwd' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('updatePwd', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/updatePwd', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:07:18 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'user/updatePwd'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/account'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55453'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/updatePwd'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=user/updatePwd'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465614438.312
+    'REQUEST_TIME' => 1465614438
+]
+2016-06-11 11:08:02 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/updatePwd' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('updatePwd', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/updatePwd', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:08:02 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'user/updatePwd'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/account'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55462'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/updatePwd'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=user/updatePwd'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465614482.598
+    'REQUEST_TIME' => 1465614482
+]
+2016-06-11 11:08:25 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/updatePwd' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('updatePwd', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/updatePwd', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:08:25 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'user/updatePwd'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/account'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55468'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/updatePwd'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=user/updatePwd'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465614505.366
+    'REQUEST_TIME' => 1465614505
+]
+2016-06-11 11:09:06 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: user/updatePwd' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('updatePwd', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/updatePwd', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:09:06 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'user/updatePwd'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/account'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55482'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/updatePwd'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=user/updatePwd'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465614546.269
+    'REQUEST_TIME' => 1465614546
+]
+2016-06-11 11:14:22 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "udemo".' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('udemo', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:14:22 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'udemo'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55594'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=udemo'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=udemo'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465614862.516
+    'REQUEST_TIME' => 1465614862
+]
+2016-06-11 11:20:55 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "deno]".' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('deno]', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:20:55 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'deno]'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55801'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=deno]'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=deno]'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465615255.253
+    'REQUEST_TIME' => 1465615255
+]
+2016-06-11 11:21:00 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "denmo".' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('denmo', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 11:21:00 [127.0.0.1][-][pdh8a8h4pn688cu54cejgo1oc1][info][application] $_GET = [
+    'r' => 'denmo'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'pdh8a8h4pn688cu54cejgo1oc1'
+    '_csrf' => '6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C8DpYAx14ELo888eXA32rieS1qJmYhrq\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=pdh8a8h4pn688cu54cejgo1oc1; _csrf=6ba55143aa5e6d7495151201ab6230228a60d5c26df20bafbe3b5e96473b735fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C8DpYAx14ELo888eXA32rieS1qJmYhrq%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '55801'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=denmo'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=denmo'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465615260.005
+    'REQUEST_TIME' => 1465615260
+]
+2016-06-11 20:01:26 [127.0.0.1][-][iblouicng5o8g4t0j8hi6a0qf6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "demmo]".' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('demmo]', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-11 20:01:26 [127.0.0.1][-][iblouicng5o8g4t0j8hi6a0qf6][info][application] $_GET = [
+    'r' => 'demmo]'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'PHPSESSID' => 'iblouicng5o8g4t0j8hi6a0qf6'
+    '_csrf' => 'b20c4d8954b3d27b6eb0fbdde2ada0944f42ee10266ce209eb20807fa48e75e1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pcsteaby4tqdTSpymNJ5sEiM-qVuboIo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; PHPSESSID=iblouicng5o8g4t0j8hi6a0qf6; _csrf=b20c4d8954b3d27b6eb0fbdde2ada0944f42ee10266ce209eb20807fa48e75e1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pcsteaby4tqdTSpymNJ5sEiM-qVuboIo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '64914'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=demmo]'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=demmo]'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465646486.336
+    'REQUEST_TIME' => 1465646486
+]
+2016-06-12 09:11:52 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: create/account' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('account', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('create/account', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-12 09:11:52 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][info][application] $_GET = [
+    'r' => 'create/account'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465693911'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'najava'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/index'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465693911'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53200'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=create/account'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=create/account'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465693912.327
+    'REQUEST_TIME' => 1465693912
+]
+2016-06-12 09:12:43 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: create/account' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('account', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('create/account', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-12 09:12:43 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][info][application] $_GET = [
+    'r' => 'create/account'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465693911'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'najava'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465693911'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53229'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=create/account'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=create/account'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465693963.127
+    'REQUEST_TIME' => 1465693963
+]
+2016-06-12 09:12:48 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: create/account' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('account', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('create/account', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-12 09:12:48 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][info][application] $_GET = [
+    'r' => 'create/account'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465693965'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'najava'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/index'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465693965'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53229'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=create/account'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=create/account'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465693968.129
+    'REQUEST_TIME' => 1465693968
+]
+2016-06-12 09:13:04 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: create/account' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('account', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('create/account', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-12 09:13:04 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][info][application] $_GET = [
+    'r' => 'create/account'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465693981'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'najava'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/index'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465693981'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53245'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=create/account'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=create/account'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465693984.442
+    'REQUEST_TIME' => 1465693984
+]
+2016-06-12 09:13:35 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: create/account' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('account', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('create/account', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-12 09:13:34 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][info][application] $_GET = [
+    'r' => 'create/account'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465694013'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'najava'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/index'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465694013'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53307'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=create/account'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=create/account'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465694014.955
+    'REQUEST_TIME' => 1465694014
+]
+2016-06-12 09:14:42 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: create/account' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('account', Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('create/account', Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-06-12 09:14:42 [127.0.0.1][-][6q2ej6aujcql5sj6mgmi6cr8r0][info][application] $_GET = [
+    'r' => 'create/account'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465694081'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'najava'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/index'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465694081'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53334'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=create/account'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=create/account'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465694082.658
+    'REQUEST_TIME' => 1465694082
+]
+2016-06-12 09:24:51 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot redeclare frontend\controllers\UserController::actionAutoflie()' in D:\wamp\demo\yii\frontend\controllers\UserController.php:48
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-12 09:24:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465694390'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=login/index'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465694390'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53613'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/index'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=user/index'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465694690.97
+    'REQUEST_TIME' => 1465694690
+]
+2016-06-12 09:31:26 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\wamp\demo\yii\frontend\views\user\haveRefuseResumes.php' in D:\wamp\demo\yii\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\wamp\\demo\\yi...', Array, Object(frontend\controllers\UserController))
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('haveRefuseResum...', Array, Object(frontend\controllers\UserController))
+#2 D:\wamp\demo\yii\frontend\controllers\UserController.php(57): yii\base\Controller->render('haveRefuseResum...')
+#3 [internal function]: frontend\controllers\UserController->actionHave()
+#4 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('have', Array)
+#7 D:\wamp\demo\yii\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/have', Array)
+#8 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\wamp\demo\yii\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-06-12 09:31:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user/have'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465695085'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/index'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465695085'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53753'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/have'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=user/have'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465695086.616
+    'REQUEST_TIME' => 1465695086
+]
+2016-06-12 09:31:26 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\wamp\demo\yii\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 D:\wamp\demo\yii\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 D:\wamp\demo\yii\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 D:\wamp\demo\yii\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 D:\wamp\demo\yii\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 D:\wamp\demo\yii\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#6 {main}
+2016-06-12 09:31:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user/have'
+]
+
+$_COOKIE = [
+    'tencentSig' => '4818307072'
+    'Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465646830,1465693780'
+    'PHPSESSID' => '6q2ej6aujcql5sj6mgmi6cr8r0'
+    '_csrf' => 'e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w\";}'
+    'Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6' => '1465695085'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.aaa.net'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.aaa.net/demo/yii/frontend/web/index.php?r=user/index'
+    'HTTP_COOKIE' => 'tencentSig=4818307072; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465646830,1465693780; PHPSESSID=6q2ej6aujcql5sj6mgmi6cr8r0; _csrf=e12343e8c605b6e04356506e58de194ef76becfec5ff1a9d689b2876120768c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22AYh7Kg8mRy0KgEG3t7vs-_7ruyws5B6w%22%3B%7D; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1465695085'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\svn\\bin;D:\\web\\php55;D:\\git\\tortoiset\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'www.aaa.net'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/wamp/demo/yii/frontend/web/index.php'
+    'REMOTE_PORT' => '53753'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/have'
+    'REQUEST_URI' => '/demo/yii/frontend/web/index.php?r=user/have'
+    'SCRIPT_NAME' => '/demo/yii/frontend/web/index.php'
+    'PHP_SELF' => '/demo/yii/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465695086.616
+    'REQUEST_TIME' => 1465695086
+]
